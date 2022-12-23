@@ -8,6 +8,7 @@ text-transform: uppercase;
 font-weight: bold;
   
 }
+
 header{
   position: fixed;
   width: 100%;
@@ -64,7 +65,6 @@ header ul li:hover ul{
   display: block;
   flex-direction: column;
 }
-
 
 .lii{
   top: 0;
@@ -274,19 +274,29 @@ color: rgba(0,0,0,0.6);
  
 }
 .section4 div{
+  width: 100%;
+  display:
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.section4 div div{
   align-items: center;
   text-align: center;
   padding: 0px 10px;
   justify-content: center;
+ flex-direction: column;
+ 
 }
-.section4 div  h1{
+.section4 div div  h1{
   text-align: center;
   color: white;
   justify-content: center;
   align-items: center;
   line-height: 1px;
 }
-.section4 div p{
+.section4 div div p{
   text-align: center;
   color: white;
   justify-content: center;
@@ -480,7 +490,7 @@ color: rgba(0,0,0,0.6);
        background-color: #8293ff;
        color: white;
        transition: all 0.30 ease-in;
-       transform: scale(1.1);
+       transform: scale(1);
        border: 1px solid rgba(130,147,255,0.5);
        box-shadow: 0 8px 20px 10px rgba(0,0,0,0.5);
     }        
@@ -489,6 +499,95 @@ color: rgba(0,0,0,0.6);
       background-color: white;
     }
     /*section7 end*/
+/*footer*/
+footer{
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+footer .teu{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top:100px;
+}
+footer .mkl{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+  
+}
+footer .mkl p{
+  font-size: 10px;
+  padding: 5px;
+}
+footer .mkl h1{
+  padding: 5px;
+  font-size: 30px;
+}
+footer .mkl .km{
+  width: 300px;
+}
+footer .mkl .u p{
+  margin-left: 100px;
+  margin-top: -30px;
+}
+footer .xxx{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+footer .xxx img{
+ padding: 100px;
+  width: 700px;
+}
+footer .bom{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+  flex-direction: column;
+  width: 100%;
+}
+footer .bom h1{
+  font-size: 15px;
+}
+.yi{
+ 
+}
+footer .bom .p{
+  width: 150px;
+  font-size: 2vw;
+  padding: 0px 10px;
+  font-weight: bold;
+  
+}
+footer .yi p{
+  font-size: 80px;
+}
+.h{
+  padding: 0 10px;
+}
+input{
+  padding: 10px;
+  font-size: 20px;
+  padding: 20px 10px;
+  background-color: #8293ff;
+  color: white;
+}
+input{
+  cursor: pointer;
+}
+/*footer end*/
+
+
 
 
 
@@ -497,7 +596,7 @@ color: rgba(0,0,0,0.6);
  
 @media (max-width:800px){
   
-   
+  
 
   header div{
  float: left;
@@ -512,6 +611,7 @@ header{
   background-color: #fff;
   overflow: hidden;
   z-index: 1;
+  
 }
 header .ber{
   top: 0;
@@ -521,10 +621,13 @@ margin-right: -10px;
 }
 header .ber ul{
   list-style: none;
-  margin-right: 10px;;
-  display: flex;
-  
+ 
+ display: flex;
+  width: 100%;
+  margin-right: 20px;
+height: 100vh;
 }
+
 header .ber ul a{
   padding: 5px;
   text-decoration: none;
@@ -543,10 +646,15 @@ header .logo{
  
 }
 
-
-
-
-
+.ber ul ul{
+  display: none;
+}
+.ber ul:hover ul{
+  display: block;
+}
+i:hover{
+  display: none;
+}
 
 .section{
 justify-content: space-between;
@@ -556,10 +664,12 @@ justify-content: space-between;
   height: 100%;
   background-color: #8393ff;
   margin-top: 110px;
+  padding: 0;
   
 }
 .section .tex{
-font-size: 10px;
+font-size: 1px;
+
 }
 .section div img{
   width: 40vw;
@@ -584,14 +694,14 @@ font-size: 10px;
 
 
 .tex p{
-  font-size: 10px;
+  font-size: 5px;
   color: rgba(78,78,78, 0.7);
 }
 .tex h3{
   font-weight: normal;
 }
 .tex h1{
-  font-size: 6vw;
+  font-size: 3vw;
 }
 /*section2 start*/
 .section2{
@@ -604,14 +714,15 @@ margin-top: 60px;
   background-color: #f9f9ff;
 }
 .section2 div img{
-  width: 60vw;
-  display: noe;
+  width: 50vw;
+
 }
 .section2 .tff{
-  font-size: 1vw;
+
+  
 }
 .section2 .tff h1{
-  font-size: 4vw;
+  font-size: 2vw;
   font-weight: bold;
   text-align: center;
 }
@@ -619,12 +730,12 @@ margin-top: 60px;
   text-align: center;
   font-weight: normal;
   color: rgba(0,0,0,0.7);
-  font-size: 10px;
+  font-size: 5px;
 }
 .section2 .tff p{
   text-align: center;
   color: rgba(0,0,0,0.6);
-  font-size: 2vw;
+  font-size: 1vw;
 }
 .section2 .tff input{
   font-size: 3vw;
@@ -658,6 +769,7 @@ margin-top: 60px;
   height: 100%;
   background-color: #f9f9ff;
   margin-top: 130px;
+
 }
 .section3 .tr{
   text-align: center;
@@ -714,35 +826,36 @@ margin-top: 60px;
 }
 /*section4 start*/
 .section4{
-     justify-content: space-between;
-  align-items:center;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: 100%;
   background-color: #8283ff;
-  margin-top: 130px;
+margin-top: 130;
 }
 .section4 div{
+  padding: 50px 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0px 10px;
-  width: 100%;
-  
+  flex-direction: colum;
 }
-.section4 div h1{
+.section4 div div p{
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+.section4  div div h1{
   text-align: center;
   color: white;
   justify-content: center;
   align-items: center;
   line-height: 1px;
+  font-size: 25px;
 }
-.section4 div p{
-  text-align: center;
-  color: white;
-  justify-content: center;
-  align-items: center;
-}
+
 /*section4 end*/
 /*section5 start*/
 
@@ -936,4 +1049,90 @@ text-align: center;
       background-color: white;
     }
     /*section7 end*/
+    
+/*footer*/
+footer{
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+  width: 100%;
+flex-direction: column;
+display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+footer .teu{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.mkl{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.km{
+  display: flex;
+  margin: 0 auto;
+}
+.mkl h1{
+ font-size: 20px;
+ text-align: center;
+}
+.u img{
+  margin-left: 31px;
+}
+.mkl p{
+ font-size: 10px;
+ text-align: center;
+}
+.xxx{
+  width: 100%;
+  height: 100%;
+  
+}
+footer .xxx img{
+ padding:10px;
+  width: 100px;
+}
+.yi{
+ 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  flex-direction: column;
+}
+.yi .h{
+  font-size: 30px;
+}
+.yi .p{
+  padding: 10px;
+}
+.bom{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  flex-direction: column;
+}
+input{
+ 
+  font-size: 10px;
+  padding: 15px 25px;
+  background-color: #8293ff;
+  color: white;
+}
+
+/*footer end*/
+    
+    
 }
